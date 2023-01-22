@@ -14,7 +14,11 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
-//generate test case for this class
+/**
+ * @param imageApiService
+ * @param imageDaoService
+ * @param dispatcher
+ */
 class ImageRepositoryImpl @Inject constructor(
     private val imageApiService: ImageApiService,
     private val imageDaoService: ImageDaoService,

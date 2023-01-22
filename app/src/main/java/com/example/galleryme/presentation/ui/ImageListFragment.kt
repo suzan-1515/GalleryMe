@@ -145,6 +145,7 @@ class ImageListFragment : Fragment() {
     private fun renderLoading(state: UiState.Loading): UiState {
         if (state.data != null) {
             binding.apply {
+                progressBar.visibility = View.VISIBLE
                 imageListRecyclerView.visibility = View.VISIBLE
                 imageAdapter.differ.submitList(state.data)
             }
